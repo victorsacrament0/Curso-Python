@@ -71,6 +71,23 @@ elif om == '/':
    
 else: print('Operação inválida.')
 
+#com match case
+
+match om:
+    case '+':
+        print(f'Soma: {n1} + {n2} = {n1 + n2}')
+    case '-':
+        print(f'Subtração: {n1} - {n2} = {n1 - n2}')
+    case '*':
+        print(f'Multiplicação: {n1} * {n2} = {n1 * n2}')
+    case '/':
+        print(f'Divisão: {n1} / {n2} = {n1 / n2}')
+    case _:
+        print('Operação inválida.')
+
+
+
+
 #7️⃣ Dia da semana (match case)
 #Peça um número de 1 a 7 e mostre o dia da semana correspondente usando match case.
 
