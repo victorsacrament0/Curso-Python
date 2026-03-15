@@ -1,0 +1,12 @@
+Nome: Fatima
+Idade: 60
+Curso: Nutricao
+E-mail: fafy@fatima.com
+Nome: Roberto
+Idade: 34
+Curso: Adm
+E-mail: dasd@asda.com
+Nome: Victor
+Idade: 34
+Curso: Info
+E-mail: vasdg@ghgsd.com
