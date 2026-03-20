@@ -9,6 +9,6 @@ arquivo.write("Nome: " + nome + "\n")
 arquivo.write("Idade: "+idade + "\n")
 arquivo.write("Curso: "+curso + "\n")
 arquivo.write("E-mail: "+email + "\n\n")
-dados.write("-----------------------------------" + "\n")
+arquivo.write("-----------------------------------" + "\n")
 
 arquivo.close()

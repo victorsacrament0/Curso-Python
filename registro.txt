@@ -10,3 +10,15 @@ Nome: Victor
 Idade: 34
 Curso: Info
 E-mail: vasdg@ghgsd.com
+Nome: Victor Hugo
+Idade: 33
+Curso: Ciencias
+E-mail: asda@dasd.com
+
+-----------------------------------
+Nome: Anderson
+Idade: 44
+Curso: Informatica
+E-mail: asdas@asda.com
+
+-----------------------------------
