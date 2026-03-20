@@ -53,7 +53,7 @@ while True:
         print('_' * 40)
         break  
     try:
-        soma.append(num)
+        soma.append(num)  #append é um método de lista que adiciona um elemento ao final da lista. (acrescenta o numero digitado a lista soma)
         
     except ValueError:
      print('_' * 40)
