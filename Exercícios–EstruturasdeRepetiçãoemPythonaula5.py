@@ -68,6 +68,16 @@ print(f"Soma dos números digitados: {total}")
 
 # 7-Peça a senha ao usuário até que ele acerte (senha = "1234").
 
+senha = input('Digite a senha: ')
+
+while senha != "1234":
+    print('Senha incorreta, tente novamente!')
+    senha = input('Digite a senha: ')
+if senha == "1234":
+        print('_' * 40)
+        print('Senha correta, acesso permitido!')
+        print('_' * 40)
+
 
 # 8-Mostre a tabuada de um número escolhido pelo usuário.
 
