@@ -37,7 +37,14 @@ if num % 2 == 0:
     print('-Par-')
 else:
     print('-Impar-')
-
+# Outra forma:
+#    num = int(input("Informe um valor: "))
+#    resto = num % 2
+ 
+#    if resto == 0:
+#        print("O numero é par")
+#    else:
+#        print("O numero é impar")
 
 # 5️⃣ Classificação de nota
 #Peça ao usuário uma nota de 0 a 10 e classifique:
@@ -67,9 +74,13 @@ elif om == '-':
 elif om == '*':
     print(f'{n1} * {n2} = {n1 * n2}')
 elif om == '/':
-    print(f'{n1} / {n2} = {n1 / n2}') #ou print(f'{n1} / {n2} = {n1 // n2}')
-   
+    if n2 == 0:
+        print('Divisão por 0 não é possivel')
+    else:
+     print(f'{n1} / {n2} = {n1 / n2}') #ou print(f'{n1} / {n2} = {n1 // n2}')
+
 else: print('Operação inválida.')
+
 
 #com match case
 
@@ -99,7 +110,7 @@ match weekday:
     case 1:
         print('Domingão')
     case 2:
-        print('Segunda Infelizmente')
+        print('Segunda, Infelizmente')
     case 3:
         print('Terça-Feira')    
     case 4:
@@ -124,17 +135,40 @@ match weekday:
 
 print ('|-Faixa etaria:-|  ')
 
-age = int(input('Digite sua idade: '))
+age = int(input('Digite a idade: '))
 
 match age:
-    case age if age < 12:
+    case idade if idade < 0:
+        print('-Idade invalida-')
+    case idade if idade <= 12:
         print('-Criança-')
-    case age if age >12 and age < 18:
+    case idade if idade < 18:
         print('-Aborrecente-')
-    case age if age >= 18 and age < 60:
+    case idade if idade < 60:
         print('-Adulto-')
-    case age if age >= 60:
-        print('-Idoso-')
+    case idade if idade >= 60:
+        print('-Idoso-')  
+    case _:
+        print('invalido')
+
+
+""" Outra forma de fazer, com IF
+age = int(input("Informe a idade: "))
+
+if age < 0:
+    print('Idade invalida')
+
+elif age <= 12:
+    print('Criança')
+elif age <= 17:
+    print('Adolescente')
+elif age <= 59:
+    print('Adulto')
+elif age >= 60:
+    print('Idoso')    
+
+else:
+    print('Parametro invalido')    """
 
 #9️⃣ Sistema de login
 #Crie duas variáveis:
@@ -153,25 +187,46 @@ senha = input('Digite sua senha: ')
 
 if usuario == usuario_correto and senha == senha_correta:   
     print('_' * 30 + '\n' )  
-    print('-Login bem-sucedido-')
+    print('-Login bem sucedido-')
 else:
     print('_' * 30 + '\n' )  
     print('-Usuário ou senha incorretos-')
 
-print('_' * 30 + '\n' )  
+print('_' * 30 + '\n' )
+
+
+''' Outra forma com if if
+
+usuario_certo = "admin"
+senha_certa = "1234"
+
+usuario = input('Digite um usuario: ')
+senha = input('Digite uma senha: ')
+
+if usuario == usuario_certo:
+    if senha == senha_certa:
+        print ("Usuario e Senha corretas")
+    else:
+        print ("Usuario e(ou) senha invalido(s)")   
+else:
+        print ("Usuario e(ou) senha invalido(s)")      
+'''
 
 
 #🔟 Menu de restaurante (match case)
 # Crie um menu: 1 → Hambúrguer 2 → Pizza 3 → Salada 4 → Refrigerante
 #O usuário digita o número do pedido e o programa mostra o item escolhido usando match case.
 
+print('-----Seja bem vindo!------')
 print('-Menu Restaurante Simples-')
 print('1. Hamburguer')
 print('2. Pizza')
 print('3. Salada')  
 print('4. Regrigerante ')  
+print('_' * 30 + '\n' )
 
 pedido = int(input("Digite o numero do pedido: ")) 
+print('_' * 30 + '\n' )
 
 match pedido:
     case 1:
@@ -184,4 +239,7 @@ match pedido:
         print('Você pediu um Refrigerante')
     case _:
         print('Pedido inválido. Por favor, escolha um número de 1 a 4.')
+        print('_' * 30 + '\n' )
+
 print('Obrigado por nos escolher, volte sempre!')
+print('_' * 30 + '\n' )
