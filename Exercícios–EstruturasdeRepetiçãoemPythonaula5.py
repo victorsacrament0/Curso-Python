@@ -60,7 +60,9 @@ while True:
      print('Valor invalido, digite um numero inteiro!')
      print('_' * 40)
 
-total = sum(soma)
+total = sum(soma)   # sum =calcula a soma dos elementos de um iterável (listas, tuplas, conjuntos) de forma rápida. 
+                    #Ela é ideal para somar números (inteiros ou floats), retornando o total da soma dos itens 
+                    # mais um valor opcional inicial(padrão é iniciar em 0)
 print(f"Números digitados: {soma}")
 print(f"Soma dos números digitados: {total}")
 
