@@ -31,8 +31,7 @@ try:
 # print("Valor inválido! Digite um numero") """
 
 # 2. Pergunta de Operação
-    verifica = input(
-        f"SR {nome_titular} deseja relaizar alguma operação? (sim ou não) ").lower()
+    verifica = input(f"SR {nome_titular} deseja relaizar alguma operação? (sim ou não) ").lower()
 
 # if verifica == "sim": """
     if verifica in ["sim", "s", "si"]:
