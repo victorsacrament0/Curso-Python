@@ -220,7 +220,7 @@ print(f"  Zi: {voto2} voto(s)")
 print(f"  Zó: {voto3} voto(s)")
 
 # Determina o vencedor
-max_votos = max(voto1, voto2, voto3)             #retorna o maior item em um iterável (lista, tupla, conjunto) ou o maior entre dois ou mais argumentos             
+max_votos = max(voto1, voto2, voto3)     #retorna o maior item em um iterável (lista, tupla, conjunto) ou o maior entre dois ou mais argumentos             
 
 print('_'*50)
 print("   Vencedor(es)    ")
