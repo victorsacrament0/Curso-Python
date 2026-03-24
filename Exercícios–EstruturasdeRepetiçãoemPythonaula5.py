@@ -114,9 +114,54 @@ except ValueError:
     print('Por favor, digite um número válido.')
 print('_' * 40)
 
-#9
+#9 Peça 10 números ao usuário e mostre:
 
-#10
+# - o maior número
+# - o menor número
+
+numeros = []
+n = 0
+
+print("Digite 10 valores inteiros: ", '\n')
+try:
+    for n in range (10):
+        n = int(input('Digite um valor:'))
+        numeros.append(n)
+except ValueError:
+    print('_' * 40)
+    print('Por favor, digite um numero valido.')
+print('_' * 40 , '\n')
+
+maior = max(numeros) #MAX - Ela percorre a lista e retorna o elemento numérico ou alfabético de maior valor.
+menor = min(numeros)
+print (f'Os numeros digitados foram: {numeros}')
+print (f'O maior numero digitado foi: {maior}')
+print (f'O menor numero digitado foi: {menor}')
+
+
+#10 Peça números ao usuário até que ele digite 0 e mostre:
+
+#  - quantos números foram digitados
+#  - a soma deles
+#  - a média
+
+soma = 0
+numero = 1
+numeros = []  #lista
+
+while numero != 0:
+    numero = int(input("Informe um numero ou digite 0 para sair: "))
+    soma = soma + numero
+    numeros.append(numero)  #adiciona a lista
+
+media = len(numeros) # len é uma ferramenta nativa usada para retornar o número de itens(o comprimento)
+                     #       de um objeto, como strings, listas, tuplas, dicionários ou conjuntos
+
+print(f'Números digitados: {numeros}') 
+print(f"Soma: {soma} ")
+print(f'Media:{soma / (media-1) }')
+
+
 
 # 11-Crie um programa que mostre todos os números pares entre dois números informados pelo usuário.
 
