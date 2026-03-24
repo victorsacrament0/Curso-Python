@@ -37,10 +37,11 @@ for mes in vendas24:
     valor24 = vendas24[mes]
     crescimento = valor24 / valor23 - 1
     print(f'No mes de {mes} o crescimento foi de {crescimento:.1%}') 
-                                             #.1$ retorna quantas casas vc quer dps do . e % o tipo que deseja
+                                             #.1% retorna quantas casas vc quer dps do . e % o tipo que deseja
 
-                                             # O que são loops ou repetição?
-    # São comandos que permitem executar um bloco várias vezes.
+
+# O que são loops ou repetição?
+# São comandos que permitem executar um bloco várias vezes.
 
 #Tipos de estrutura de repetição no Python
     # While -> Repente enquanto uma condição for verdadeira.
