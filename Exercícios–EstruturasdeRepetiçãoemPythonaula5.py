@@ -49,6 +49,17 @@ print('_' * 40)"""
 
 # 6-Peça números ao usuário até que ele digite 0. Ao final, mostre a soma de todos os números digitados.
 
+soma = 0
+numero = 1
+ 
+while numero != 0:
+    numero = int(input("Informe um numero ou digite 0 para sair: "))
+    soma = soma + numero
+ 
+print(f"Soma: {soma} ")
+
+
+#com o usuario sem saber que o zero para
 soma = []
 while True:
     num = int(input('Tente acertar o número secreto: '))
