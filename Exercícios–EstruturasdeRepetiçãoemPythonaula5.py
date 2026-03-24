@@ -21,13 +21,20 @@ print('_' * 40)
 
 print('Numeros pares de 1 a 20:')   
 
-for num in range(1,21,1):
+for num in range(1,21):
     if num % 2 == 0:
         print('Numero par:' + str(num))
 print('_' * 40)
 
 # 5-Peça 5 números ao usuário e mostre a soma total.
 
+soma_total = 0
+for i in range(5):
+    numero = float(input(f"Digite o {i}º número: "))
+    soma_total += numero  
+print(f"A soma total dos números é: {soma_total}")
+
+"""
 v1 = float(input('Digite o primeiro valor: '))
 v2 = float(input('Digite o segundo valor: '))
 v3 = float(input('Digite o terceiro valor: '))
@@ -38,7 +45,7 @@ print('_' * 40)
 print(f'Valores digitados: {v1}, {v2}, {v3}, {v4}, {v5}')
 
 print(f'Soma dos valores: {soma}')
-print('_' * 40)
+print('_' * 40)"""
 
 # 6-Peça números ao usuário até que ele digite 0. Ao final, mostre a soma de todos os números digitados.
 
