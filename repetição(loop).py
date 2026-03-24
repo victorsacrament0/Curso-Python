@@ -1,4 +1,4 @@
-#Loo´s pi repetição: São comandos que permitem executar um bloco varias vezes
+#Loop ou repetição: São comandos que permitem executar um bloco varias vezes
 num = 0
 
 while num < 10:
@@ -109,3 +109,19 @@ for i in range(5):
     if i == 3:
         continue
     print(i)
+
+
+
+# Percorrer uma lista 
+lista_prod = ['colher','faca','garfo','panela','frigideira']
+
+for prod in lista_prod:
+    print(prod)
+
+# transformar toda palavra dentro da lista ficar com a 1 letra em maiusculo
+
+lista_prod = ['colher','faca','garfo','panela','frigideira']
+
+for prod in lista_prod:
+    print(prod.capitalize())  #capitalize é utilizado para formatar strings, convertendo o primeiro
+                                  #caractere para maiúsculo e todos os caracteres restantes para minúsculos
