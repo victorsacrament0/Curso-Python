@@ -165,21 +165,30 @@ print(f'Media:{soma / (media-1) }')
 
 # 11-Crie um programa que mostre todos os números pares entre dois números informados pelo usuário.
 
-try:
-    print('_' * 40)
-    n1 = int(input('Digite o primeiro numero: '))
-    n2 = int(input('Digite o segundo numero: '))
-    print('_' * 40)
-    print(f'|Números pares entre {n1} e {n2}: |')
-    print('_' * 40)
-    for i in range(n1, n2 + 1):
-        if i % 2 == 0:
-            print(i)
-    print('_' * 40)        
+while True:
 
-except ValueError:
-    print('_' * 40)
-    print('Por favor, digite um número válido.')
+    try:
+        print('_' * 40)
+        n1 = int(input('Digite o primeiro numero: '))
+        n2 = int(input('Digite o segundo numero: '))
+        print('_' * 40)
+
+        if n1 > n2:
+            n3 = n1 #Guarda o valor de 1
+            n1 = n2 #Troca o valor de 1 para o do 2
+            n2 = n3  #Troca o valor de 2 para 3
+        print(f'|Números pares entre {n1} e {n2}: |')
+        print('_' * 40)
+
+        for i in range(n1, n2 + 1):
+            if i % 2 == 0:
+                print(i)
+        print('_' * 40)       
+        break 
+
+    except ValueError:
+     print('_' * 40)
+     print('Por favor, digite um número válido.')
 
 #12 Simule uma votação com 5 pessoas. Pergunte o voto (1,2 e 3) e mostre no final qual opção teve mais votos
 
