@@ -119,6 +119,27 @@ print('_' * 40)
 # - o maior número
 # - o menor número
 
+#sem lista
+
+numero = int(input("Informe um numero: "))
+ 
+maior = numero
+menor = numero
+ 
+for i in range(9):
+    numero = int(input("Informe um numero: "))
+ 
+    if numero > maior:
+        maior = numero
+ 
+    if numero < menor:
+        menor = numero
+ 
+print("Maior", maior)
+print("Mwnor", menor)
+
+
+#com lista
 numeros = []
 n = 0
 
