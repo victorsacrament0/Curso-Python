@@ -29,7 +29,7 @@ while nivel == 1:
                 break
             elif num < n_certo:
                 print('\n')
-                print((f'- Quase lá, este valor ainda é menor que o desejado!-') + '\n')
+                print((f'- Quase lá, este valor é menor que o desejado!-') + '\n')
                 print(('_' * 30) + '\n')
                 base -= 2
             else:
