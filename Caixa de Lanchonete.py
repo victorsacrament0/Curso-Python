@@ -4,6 +4,11 @@ total = 0
 hamburger = 0
 refri = 0
 batata = 0
+valor_refri = 5
+valor_ham = 10
+valor_btt = 7
+
+
 
 print('-----Seja bem vindo!------')
 print('-Menu Restaurante Simples-')
@@ -17,13 +22,13 @@ try:
         if pedido in ['fim' , 'finalizar' , 'sair']:
             break
         if pedido == 'hamburger':
-            total += 10
+            total += valor_ham
             hamburger += 1
         elif pedido == 'refrigerante':
-            total += 5
+            total += valor_refri
             refri += 1
         elif pedido in ['batata' , 'batata frita' , 'batatafrita']:
-            total += 7
+            total += valor_btt
             batata += 1
         else:
             print('Valor Invalido')
