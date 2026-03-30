@@ -15,7 +15,7 @@ print('Nosso cardapio: \n Cardápio: \n Hamburguer - R$10 \n Refrigerante - R$5 
 print('_' * 30 + '\n' )
 try:
     while True:
-        pedido = input("Digite o item desejado: ").lower()
+        pedido = input("\n-Digite o item desejado: ").lower()
         print('_' * 30 + '\n' )
         if pedido in ['fim' , 'finalizar' , 'sair']:
             break
