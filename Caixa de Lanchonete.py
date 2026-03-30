@@ -1,5 +1,3 @@
-
-    
 total = 0
 hamburger = 0
 refri = 0
@@ -22,18 +20,21 @@ try:
         if pedido in ['fim' , 'finalizar' , 'sair']:
             break
         if pedido == 'hamburger':
-            total += valor_ham
-            hamburger += 1
+            qtd = int(input('Digite a quantidade desejada: '))
+            total += valor_ham * qtd
+            hamburger += qtd
         elif pedido == 'refrigerante':
-            total += valor_refri
-            refri += 1
+            qtd = int(input('Digite a quantidade desejada: '))
+            total += valor_refri * qtd
+            refri += qtd
         elif pedido in ['batata' , 'batata frita' , 'batatafrita']:
+            qtd = int(input('Digite a quantidade desejada: '))
             total += valor_btt
-            batata += 1
+            batata += qtd
         else:
             print('Valor Invalido')
             
-        print(f'O pedido está dando = {total}')
+        print(f'O pedido está dando = {total:.2f}')
 except ValueError:
         print('\n')
         print ('Valor Invalido')
@@ -44,8 +45,7 @@ if total >= 20:
 
 print(f'Itens comprados: \n Hamburguer: {hamburger} \n Refrigerante: {refri} \n Batata Frita: {batata} \n')
 
-print(f'Valor total do pedido = [R${total}] \n')
+print(f'Valor total do pedido = [R${total:.2f}] \n')
 
 print('Obrigado por nos escolher, volte sempre!')
 print('_' * 30 + '\n' )
-
