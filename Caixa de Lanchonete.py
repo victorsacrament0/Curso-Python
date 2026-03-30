@@ -29,11 +29,11 @@ try:
             refri += qtd
         elif pedido in ['batata' , 'batata frita' , 'batatafrita']:
             qtd = int(input('Digite a quantidade desejada: '))
-            total += valor_btt
+            total += valor_btt * qtd
             batata += qtd
         else:
             print('Valor Invalido')
-            
+        print ('\nItem(ns) adicionado(s)')    
         print(f'O pedido está dando = {total:.2f}')
 except ValueError:
         print('\n')
