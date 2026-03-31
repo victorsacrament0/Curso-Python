@@ -7,10 +7,10 @@ for i in lista:
 
 # 2 - Crie um vetor com 3 nomes e exiba o primeiro e o último.
 
-lista = [n1, n2 , n3]
 n1 = int(input('Digite um número: '))
 n2 = int(input('Digite outro número: '))
 n3 = int(input('Digite outro número: '))
+lista = [n1, n2 , n3]
 
 primeiro = lista[0]
 ultimo = lista[-1]
