@@ -87,12 +87,13 @@ matriz = [
 ]
 
 soma = (matriz[0])+(matriz[1])+(matriz[2])
-print('A soma dos elementos é de: {}'.format(soma)) 
-print('_' * 40)
+print('\nA soma dos elementos é de: {}'.format(soma)) 
+print('_' * 40, '\n')
+
 diagonal = [matriz[i][i] for i in range(len(matriz))]
 
 print("Matriz:")
 for linha in matriz:
     print(linha)
 
-print("Diagonal principal:", diagonal)
+print("\nDiagonal principal:", diagonal,'\n')
