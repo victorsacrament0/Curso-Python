@@ -88,7 +88,7 @@ matriz = [
 
 soma = (matriz[0])+(matriz[1])+(matriz[2])
 print('A soma dos elementos é de: {}'.format(soma)) 
-
+print('_' * 40)
 diagonal = [matriz[i][i] for i in range(len(matriz))]
 
 print("Matriz:")
