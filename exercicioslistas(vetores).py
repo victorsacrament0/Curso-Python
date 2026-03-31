@@ -32,3 +32,7 @@ con = lista1 + lista2
 print(f"Resultado da concatenação: {con}")
 
 # 5 - Crie um vetor e mostre apenas parte dele usando slice.
+
+lista = [10,20,30,40,50,60,70,80,90]
+print(lista[2:5])
+
