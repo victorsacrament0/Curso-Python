@@ -36,3 +36,63 @@ print(f"Resultado da concatenação: {con}")
 lista = [10,20,30,40,50,60,70,80,90]
 print(lista[2:5])
 
+# 6 - Crie um vetor e adicione um elemento em posição específica.
+
+lista = ['uva', 'maçã', 'pera']
+
+fruta = input('Digite uma fruta: ')
+lista.append(fruta)
+print(lista)
+
+# 7 - Crie um vetor e remova um elemento usando pop()
+
+lista = ['uva', 'maçã', 'pera']
+
+lista.pop(-1) #colocar o passo
+print(lista)
+
+# 8 - Crie uma matriz com 3 linhas e mostre seu tamanho.
+
+matriz = [
+    ['maçã','uva','pera','banana'],
+    ['aguá','suco','mate'],
+    ['coca','sprite','fanta']
+]
+
+linhas = len(matriz)
+print(f'Linhas: {linhas}')
+print('_' * 40)
+
+# Número de colunas (assumindo que todas as linhas têm o mesmo tamanho)
+colunas = len(matriz[0]) if linhas > 0 else 0
+print(f'Colunas: {colunas}')
+
+# 9 - Crie uma matriz e insira uma nova linha em posição específica.
+
+matriz = [
+    ['maçã','uva','pera','banana'],
+    ['aguá','suco','mate'],
+    ['coca','sprite','fanta']
+]
+
+matriz.append(['batata','hamburger','crepe'])
+print(matriz)
+
+# 10 - Crie uma matriz 3x3 e mostre a soma dos elementos e a diagonal principal.
+
+matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+soma = (matriz[0])+(matriz[1])+(matriz[2])
+print('A soma dos elementos é de: {}'.format(soma)) 
+
+diagonal = [matriz[i][i] for i in range(len(matriz))]
+
+print("Matriz:")
+for linha in matriz:
+    print(linha)
+
+print("Diagonal principal:", diagonal)
