@@ -5,7 +5,7 @@ lista = ['n1','n2','n3','n4','n5']
 for i in lista:
     print(f'Numero da lista: {i}')
 
-# 2 - Crie um vetor com 3 nomes e exiba o primeiro e o último.
+# 2 - Crie um vetor com 3 números e exiba o primeiro e o último.
 
 n1 = int(input('Digite um número: '))
 n2 = int(input('Digite outro número: '))
