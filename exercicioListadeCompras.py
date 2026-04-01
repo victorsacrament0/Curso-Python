@@ -1,5 +1,5 @@
 lista = []
-lista_alf = sorted(lista)
+
 
 while True:
     try:   
@@ -11,7 +11,7 @@ while True:
        print('_'*60 +'\n')
        if prod < 1 or prod > 5:
            print('Valor Inválido!\n')
-           continue
+           continue  
        if prod == 1:
            item = input('Digite o produto desejado: ')
            lista.append(item)
@@ -19,12 +19,14 @@ while True:
            rem = input('Digite o produto que deseja remover: ')
            lista.remove(rem)
        elif prod == 3:
+           lista_unica = list(set(lista) )
+           lista_alf = sorted(lista_unica)
            print(lista_alf)
        elif prod == 4:
            qnt = len(lista)
-           print(f'Quantidade de intens na sua lista: {qnt}')
+           print(f'Quantidade de intens na sua lista: {qnt}') 
        elif prod == 5:
-           print('---Fim---')
+           print('---Fim---\n')
            break
        else:
            print('Digite um item válido\n')
@@ -33,7 +35,9 @@ while True:
     except ValueError:
         print('_' * 60)
         print('Erro! Parametro inválido.')
-    
+
+lista_unica = list(set(lista) )
+lista_alf = sorted(lista_unica)
 print(f'Sua lista de compras foi: {lista_alf}\n')
 print('Obrigado por nos escolher! Volte Sempre!')
 print('_' * 60 , '\n')
