@@ -13,7 +13,7 @@ while True:
            print('Valor Inválido!\n')
            continue  
        if prod == 1:
-           item = input('Digite o produto desejado: ')
+           item = input('Digite o produto desejado: ').lower()
            lista.append(item)
        elif prod == 2:
            rem = input('Digite o produto que deseja remover: ')
