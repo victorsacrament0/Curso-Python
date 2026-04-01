@@ -4,7 +4,7 @@ lista_alf = sorted(lista)
 while True:
     try:   
        print('_'*60 +'\n')
-       print('        ---Bem Vindo ao Mercado Virtual Python---') 
+       print('        ---Bem Vindo a lista de compras Python---') 
        print('    ---Digite o numero referente a operação desejada---\n')
        print('1-Adicionar | 2-Remover | 3-Listar | 4-Quantidade | 5-Sair \n')
        prod = int(input('Digite a opção desejada: '))
