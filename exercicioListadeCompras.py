@@ -42,6 +42,7 @@ print(f'Sua lista de compras foi: {lista_alf}\n')
 print('Obrigado por nos escolher! Volte Sempre!')
 print('_' * 60 , '\n')
 
-
+#list(set(lista)) = Não deixa q um item da lista se repita
+#sorted(lista) = Colocar em ordem alfabetica
 #para permitir remover um item numa determinada posição, usamos o lista.pop(0), remove indicando a posição na lista
 #para permitir adicionar um item em um locar especifico na lista usamos o lista.insert(0, "itemdesejado")
