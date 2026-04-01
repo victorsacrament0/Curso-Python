@@ -97,3 +97,43 @@ for linha in matriz:
     print(linha)
 
 print("\nDiagonal principal:", diagonal,'\n')
+
+
+#extras
+#mostrar 6 numeros e qm é o maior e o menor
+#lista = [10,20,30,40,50,60]
+#print(lista)
+#print(f'O maior numero é: {max(lista)}')
+#print(f'O menor numero é: {min(lista)}')
+
+
+############################
+#pedir 4 numeros e mostrar a soma e media
+soma = 0
+numero = 0
+numeros = []  
+
+for i in range(4):
+    numero = int(input("Informe um numero : "))
+    soma = soma + numero
+    numeros.append(numero)  
+
+media = len(numeros)
+
+print(f'Números digitados: {numeros}') 
+print(f"Soma: {soma} ")
+print(f'Media:{soma / media}')
+
+#ALTERNATIVA COM O sum()
+#numeros = []
+ 
+#for i in range(4):
+#    n = int(input("Digite os números: "))
+#    numeros.append(n)
+#print("Números digitados foram:", numeros)
+#soma = sum(numeros)  
+#print("Soma dos números é:", soma)
+#media = soma / len(numeros)
+#print("Média dos números é:", media)
+ 
+ 
