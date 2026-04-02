@@ -1,0 +1,39 @@
+print(('_' * 30 ) + '\n')
+print('--Jogo da adivinhação--')
+print(('_' * 30) + '\n')
+print('Descubra o PRATO secreto')
+print(('_' * 30) + '\n')
+
+import random
+
+try:
+    pratos = ['macarronada','lasanha','pizza','yakisoba','feijoada','parmegiana','hamburger','cachorro-quente','bobó']
+    p_certo = random.choices(pratos)
+
+    for i in range(5):
+        
+
+        prato = input('Digite um prato: ' ).lower()
+        print(f"-Você digitou: ({prato})-")
+        print(('_' * 30) + '\n')
+    
+        if prato == p_certo:
+            print('\n')
+            print(('- Acertou Miseravi -') + '\n') 
+            print(('_' * 30) + '\n')
+            break
+        elif prato != p_certo:
+            print('\n')
+            print((f'- Quase lá, tente novamente!') + '\n')
+            print(f'Tentativa numero {(i+1)} de 5')
+            print(('_' * 30) + '\n')
+        else:
+            print('\n')
+            print(('-ERRO-') + '\n')
+            print(('_' * 30) + '\n')
+    print(('_' * 30) + '\n')
+    print('----O prato era: {} ----'.format(p_certo))
+except ValueError:
+    print('\n')
+    print ('Valor Invalido')
+    print(('_' * 30) + '\n')
