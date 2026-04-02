@@ -24,7 +24,7 @@ try:
             break
         elif prato != p_certo:
             print('\n')
-            print((f'- Quase lá, tente novamente!') + '\n')
+            print(('- Quase lá, tente novamente!') + '\n')
             print(f'Tentativa numero {(i+1)} de 5')
             print(('_' * 30) + '\n')
         else:
