@@ -19,6 +19,7 @@ try:
         if prato not in [s.lower() for s in pratos]:
             print("Digite um prato válido na lista !")
             continue
+        
         if prato == p_certo:
             print('\n')
             print(('- Acertou Miseravi -') + '\n') 
