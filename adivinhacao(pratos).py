@@ -5,12 +5,12 @@ print('Descubra o PRATO secreto\n Dentro desta lista:\n macarronada,lasanha,pizz
 print(('_' * 30) + '\n')
 
 import random
+pratos = ['macarronada','lasanha','pizza','yakisoba','feijoada','parmegiana','hamburger','cachorro-quente','bobó']
+p_certo = random.choices(pratos)
+tentativa = 5
 
 try:
-    pratos = ['macarronada','lasanha','pizza','yakisoba','feijoada','parmegiana','hamburger','cachorro-quente','bobó']
-    p_certo = random.choices(pratos)
-
-    for i in range(5):
+    while tentativa > 0:
         
 
         prato = input('Digite um prato: ' ).lower()
@@ -27,12 +27,14 @@ try:
         elif prato != p_certo:
             print('\n')
             print(('- Quase lá, tente novamente!') + '\n')
-            print(f'Tentativa numero {(i+1)} de 5')
+            tentativa -= 1
+            print(f'Tentativa numero {tentativa} de 5')
             print(('_' * 30) + '\n')
         else:
             print('\n')
             print(('-ERRO-') + '\n')
             print(('_' * 30) + '\n')
+            continue
     print(('_' * 30) + '\n')
     print('----O prato era: {} ----'.format(p_certo))
 except ValueError:
