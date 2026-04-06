@@ -136,4 +136,29 @@ print(f'Media:{soma / media}')
 #media = soma / len(numeros)
 #print("Média dos números é:", media)
  
- 
+ #Exibir elementos especificos da matriz:
+
+matriz = [
+    [7,8,9],
+    [4,5,6],
+    [1,2,3]
+ ]
+print(matriz[1][0]) # primeiro linha / segundo coluna
+
+
+#Crie uma matriz 2x2 e mostre todos os elementos.
+matriz = [
+    ['maçã','uva'],
+    ['aguá','suco'],
+]
+print('_' * 20)
+print((matriz[0])+(matriz[1]))
+print('_' * 20)
+print(matriz [0][0])
+print(matriz [0][1])
+print(matriz [1][0])
+print(matriz [1][1])
+print('_' * 20)
+for linha in matriz:
+   for itens in linha:
+       print(itens)
