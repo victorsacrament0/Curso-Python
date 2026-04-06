@@ -162,3 +162,28 @@ print('_' * 20)
 for linha in matriz:
    for itens in linha:
        print(itens)
+
+
+##Crie uma matriz 2x2 e calcule a soma de todos os elementos.
+
+matriz = [
+    [1,2],
+    [3,4],
+]
+print((matriz[0])+(matriz[1]))
+print('') 
+print((matriz [0][0]) + (matriz [0][1]) + (matriz [1][0]) + (matriz [1][1]))
+soma = (matriz [0][0]) + (matriz [0][1]) + (matriz [1][0]) + (matriz [1][1])
+print(f'O resultado da soma dos numeros da matriz é de: {soma}')
+print('_' * 20)
+for linha in matriz:
+   for itens in linha:
+       print(itens) 
+
+##numeros = [
+#   [1,2],
+#   [3,4]
+#]
+#soma = sum(sum(linha) for linha in numeros)
+#print(soma)
+
