@@ -1,7 +1,7 @@
 print(('_' * 30 ) + '\n')
 print('--Jogo da adivinhação--')
 print(('_' * 30) + '\n')
-print('Descubra o PRATO secreto')
+print('Descubra o PRATO secreto\n Dentro desta lista:\n macarronada,lasanha,pizza,\n yakisoba,feijoada,parmegiana,\n hamburger,cachorro-quente,bobó')
 print(('_' * 30) + '\n')
 
 import random
@@ -17,7 +17,7 @@ try:
         print(f"-Você digitou: ({prato})-")
         print(('_' * 30) + '\n')
         if prato not in [s.lower() for s in pratos]:
-            print("Digite um salgado válido!")
+            print("Digite um prato válido na lista !")
             continue
         if prato == p_certo:
             print('\n')
