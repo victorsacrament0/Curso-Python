@@ -250,3 +250,33 @@ matri_tres = [
 print(matri_tres)
  
 print(matri_tres[1][0:3])  #primeiro ql linha e dps o passo dentro da linha
+
+#Mostrar a matriz igual ela é no terminal
+
+matri_tres = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+for linha in matri_tres:
+    for elemento in linha:
+        print(elemento, end=''+',')
+    print()
+
+#Conte quantos números pares existem em uma matriz 3x3.
+
+matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+contador = 0
+for linha in matriz:
+    for elemento in linha:
+        if elemento %2==0:
+            contador += 1
+            print(elemento)
+        else:
+            continue    
+        
+print(f'Total de números pares é: {contador}')       
