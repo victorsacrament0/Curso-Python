@@ -219,3 +219,34 @@ matriz = [
  
 matriz[0].insert(1,9) #linha 0, espaço 1 , colocar o numero "9"
 print(matriz)
+
+#Removendo elementos
+print("Remover elementos")
+ 
+nomes = [
+    ["Jose", "Maria"],
+    ["Marcos", "Nayara"]
+]
+ 
+print(f"Matriz original { nomes }")
+ 
+#nomes[0].remove("Maria") #Exclui um elemnto especicifco
+#print(f"Matriz removida: {nomes}")
+
+#Removendo Linhas 
+nomes.pop(1) #remove a linha
+print(f"Matriz com pop { nomes }")
+ 
+#cortando pedaço especifico
+ 
+print("Cotar a matriz (slice)")
+ 
+matri_tres = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+ 
+print(matri_tres)
+ 
+print(matri_tres[1][0:3])  #primeiro ql linha e dps o passo dentro da linha
