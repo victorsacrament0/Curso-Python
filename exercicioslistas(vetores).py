@@ -75,7 +75,7 @@ matriz = [
     ['coca','sprite','fanta']
 ]
 
-matriz.append(['batata','hamburger','crepe'])
+matriz.insert(1,['batata','hamburger','crepe'])
 print(matriz)
 
 # 10 - Crie uma matriz 3x3 e mostre a soma dos elementos e a diagonal principal.
@@ -201,3 +201,21 @@ for linha in matriz:
 #print(f"total: {total}")
 #
 #
+#alterando valor a um local especifico na matriz
+matriz = [
+   [7, 10],
+   [8, 2],
+]
+ 
+matriz[1][0] = 6
+print(matriz)
+
+#inserindo um elemento em uma linha e uma posicao especifica na linha
+
+matriz = [
+   [7, 10],
+   [8, 2],
+]
+ 
+matriz[0].insert(1,9) #linha 0, espaço 1 , colocar o numero "9"
+print(matriz)
