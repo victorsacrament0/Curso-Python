@@ -28,7 +28,7 @@ print(30*"-")
 while True:
     entrada = input("Digite o número ou s para sair: ").lower()
  
-    if entrada in ['sair' , 's', 'fechar', 'final', 'finalizar']:
+    if entrada in ['sair' , 's', 'fechar', 'final', 'finalizar', 'sai']:
         break
  
     try:
@@ -52,6 +52,7 @@ if carrinho_qtd >= 5:
     valor_desconto = valor_cheio * 0.10
     valor_total = valor_cheio - valor_desconto
  
+
 print('\n' + '='*40)
 print(f"{'NOTA FISCAL':^40}")
 print('='*40)
