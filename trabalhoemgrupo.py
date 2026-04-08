@@ -5,7 +5,7 @@ while True:
        print('_'*60 +'\n')
        print('        --- Bem-Vindo ao Mercado Python ---')
        print('    --- Digite o número referente a operação desejada ---\n')
-       print('1-Adicionar | 2-Remover | 3-Listar | 4-Ver Carrinho/Total | 5-Sair \n')
+       print('1-Adicionar | 2-Remover | 3-Listar | 4-Ver Carrinho/Total | 5-Sair/Finalizar \n')
        
        prod = int(input('Digite a opção desejada: '))
        print('_'*60 +'\n')
