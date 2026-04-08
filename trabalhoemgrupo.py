@@ -82,3 +82,14 @@ else:
 print('Obrigado por nos escolher! Volte Sempre!')
 print('_' * 60 , '\n')
     
+#key=lambda: Define qual atributo do objeto deve ser usado para ordenar.
+#lambda x: x[1]: Uma função anônima (lambda) que pega um item x e retorna o seu segundo elemento (x[1])
+"""
+produtos = [("Camisa", 50), ("Calça", 120), ("Sapato", 80)]
+
+# max() vai olhar para o x[1] (preço) de cada tupla
+mais_caro = max(produtos, key=lambda x: x[1])
+
+print(mais_caro)
+# Resultado: ('Calça', 120)
+"""
