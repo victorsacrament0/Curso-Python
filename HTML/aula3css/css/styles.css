@@ -9,10 +9,31 @@ body{
 }
 
 header{
-    background-color: #c06f06d3  ;
+    background-color: #FF6D2D  ;
     color: whitesmoke;
     padding: 24px 16px; /* afasta das bordas (para medidas diferentes usar lado a lado ex: padding: 24px 16px;[superior e inferior| espaçamento lateral] */
     text-align: center; /* alinhamento de texto*/
+}
+
+nav{
+    display: flex; /*Permite mexer os elementos de forma livre*/
+    gap: 12px; /*espaçamento entre os itens*/
+    justify-content: center; /*alinha na horizontal (itens diversos)*/
+    margin-top: 12px; /*apenas a margem superior*/
+}
+
+nav a{
+    color: hsl(0, 12%, 93%);
+    text-decoration: none; /* retira decoração do texto */
+    padding: 8px 12px;
+    background-color: blue;
+    border-radius: 8px; /* Deixa os cantos redondos */
+    border: 1px solid whitesmoke;
+}
+
+/* :holder altera o elemento qnd passa o mouse */
+nav a:hover {
+    background-color: gray;
 }
 
 
