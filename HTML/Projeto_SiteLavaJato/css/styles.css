@@ -169,6 +169,10 @@ section {
   padding: 20px 15px;
   margin-top: 20px;
   margin-bottom: 20px;
+  
+  
+  
+  
   .div1 a{
     color: hsl(0, 12%, 93%);
     text-decoration: none; /* retira decoração do texto */
@@ -177,6 +181,11 @@ section {
     border-radius: 10px; /* Deixa os cantos redondos */
     border: 1px solid whitesmoke;
   }
+  .div1 img{  
+    display: flex;
+    width: 155px; 
+  }
+  
 
   .div2 a{
     color: hsl(0, 12%, 93%);
@@ -187,6 +196,11 @@ section {
     border: 1px solid whitesmoke;
   }
 
+  .div2 img{  
+    display: flex;
+    width: 155px; 
+  }
+
   .div3 a{
     color: hsl(0, 12%, 93%);
     text-decoration: none; /* retira decoração do texto */
@@ -194,6 +208,10 @@ section {
     background-color: gray;
     border-radius: 10px; /* Deixa os cantos redondos */
     border: 1px solid whitesmoke;
+  }
+  .div3 img{  
+    display: flex;
+    width: 155px; 
   }
 
   .div4 a{
@@ -203,6 +221,10 @@ section {
     background-color: gray;
     border-radius: 10px; /* Deixa os cantos redondos */
     border: 1px solid whitesmoke;
+  }
+  .div4 img{  
+    display: flex;
+    width: 155px; 
   }
 
 }
