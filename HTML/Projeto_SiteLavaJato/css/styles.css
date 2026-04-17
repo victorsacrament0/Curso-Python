@@ -224,13 +224,17 @@ footer {
   padding: 20px 15px;
   margin-top: 20px;
   margin-bottom: 20px;
-  a{
+  nav{ 
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+   a{
     color: hsl(0, 12%, 93%);
     text-decoration: none; /* retira decoração do texto */
     padding: 8px 12px;
     background-color: gray;
     border-radius: 10px; /* Deixa os cantos redondos */
     border: 1px solid whitesmoke;
-    
+   }
   }
 }
