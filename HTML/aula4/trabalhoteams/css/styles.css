@@ -14,7 +14,8 @@ body{
         background: orangered;   
         color: bisque;
         font-size: 18px;
-        margin: 0 auto;
+        margin: 12px auto;
+        
     }
     button:hover{
         background-color: rgb(49, 52, 241);
