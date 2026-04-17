@@ -213,6 +213,7 @@ article {
   margin-top: 20px;
   margin-bottom: 20px;
   p{
+    background-color: rgb(179, 177, 177);
     text-align:justify;
   }
 
