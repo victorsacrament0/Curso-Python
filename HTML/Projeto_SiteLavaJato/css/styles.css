@@ -139,10 +139,10 @@ main {
   img{
     display: flex;
     justify-content: center;
-    width: auto;
+    width: 90%;
     size: auto;
     margin: 18px auto;
-    padding: 0 auto;
+    padding: 20px 20px;
   }
 
   p{
@@ -237,6 +237,8 @@ article {
   p{
     background-color: rgb(179, 177, 177);
     text-align:justify;
+    line-height: 1.5;
+    padding: 20px;
   }
 
 }

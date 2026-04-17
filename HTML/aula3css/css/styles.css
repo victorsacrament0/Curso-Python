@@ -26,14 +26,14 @@ nav a{
     color: hsl(0, 12%, 93%);
     text-decoration: none; /* retira decoração do texto */
     padding: 8px 12px;
-    background-color: blue;
+    background-color: rgb(109, 108, 108);
     border-radius: 8px; /* Deixa os cantos redondos */
     border: 1px solid whitesmoke;
 }
 
 /* :holder altera o elemento qnd passa o mouse */
 nav a:hover {
-    background-color: gray;
+    background-color: rgb(49, 52, 241);
 }
 
 
