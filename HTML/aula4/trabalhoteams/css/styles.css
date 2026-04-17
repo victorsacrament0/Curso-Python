@@ -24,7 +24,7 @@ body{
     div{
         padding: 20px; /* Espaçameto emcima(top) e embaixo(botom) 8px laterais de 12px */
         margin: 10px;
-        background-color: white; 
+        background-color: rgb(250, 216, 164); 
         border-radius: 8px; /* Deixa os cantos redondas */
         border: 1px solid #052f81; /* Cria a borda  #e5e7eb*/
         color: #111827;  /* Cor da letra */
