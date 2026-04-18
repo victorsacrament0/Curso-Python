@@ -9,129 +9,139 @@ body {
 
 
 header {
-    background-color: antiquewhite;
+    background-color: #333333;
     height: 80px;
     padding: 20px 15px;
     
-    .logo {
-        width: 100px;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
+    #logo {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      width: 300px;
+      height: 80%;
+      margin-top: -15px;
+
+        
     }
 
-    .login-icon {
-        display: flex;
-        width: 90px;
-        justify-content: right;
-        margin-left: auto;
-        margin-top: -104px;
-        align-items:normal;
+    #login-icon {
+      display: inline-block;
+      justify-content: center;
+      margin: -10;
+      width: 105px;
+      margin-top: -150px;
+      
     }    
 
+    #loginicon {
+      display: flex;
+      justify-content: right;
+      margin: 0;
+      margin-top: -20px
+    }
 
 
+
+
+
+
+  #menu {
+    z-index: 2;
+  }
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 60px 0 40px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+   transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .nav ul {
+    padding: 0 22px;
+  }
+
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .nav li a:hover {
+    font-weight: bold;
+  }
+
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, gray, gray);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
 }
-
-
-
-#menu {
-  z-index: 2;
-}
-
-#menu-bar {
-  width: 45px;
-  height: 40px;
-  margin: 60px 0 40px 20px;
-  cursor: pointer;
-}
-
-.bar {
-  height: 5px;
-  width: 100%;
-  background-color: gray;
-  display: block;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-#bar1 {
-  transform: translateY(-4px);
-}
-
-#bar3 {
-  transform: translateY(4px);
-}
-
-.nav {
-  transition: 0.3s ease;
-  display: none;
-}
-
-.nav ul {
-  padding: 0 22px;
-}
-
-.nav li {
-  list-style: none;
-  padding: 12px 0;
-}
-
-.nav li a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.nav li a:hover {
-  font-weight: bold;
-}
-
-.menu-bg, #menu {
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.menu-bg {
-  z-index: 1;
-  width: 0;
-  height: 0;
-  margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, gray, gray);
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
-
-.change {
-  display: block;
-}
-
-.change .bar {
-  background-color: white;
-}
-
-.change #bar1 {
-  transform: translateY(4px) rotateZ(-45deg);
-}
-
-.change #bar2 {
-  opacity: 0;
-}
-
-.change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
-}
-
-.change-bg {
-  width: 520px;
-  height: 460px;
-  transform: translate(-60%,-30%);
-}
-
 
 main {
-    background-color: antiquewhite;
+    background-color: #333333;
     padding: 20px 15px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -162,10 +172,14 @@ main {
     border: 1px solid whitesmoke;
     
   }
+  nav a:hover{
+    background-color: #D4AF37;
+    color: black;
+  }
 }
 
 section {
-  background-color: antiquewhite;
+  background-color: #333333;
   padding: 20px 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -202,14 +216,27 @@ section {
     
     display: flex;
     justify-content: center;
-    margin-top:-30px ;
+    color: hsl(0, 12%, 93%);
+    text-decoration: none;
+    padding: 6px;
+    background-color: rgb(109, 108, 108);
+    border-radius: 8px; 
+    border: 1px solid whitesmoke;
+    width: 7vw;
+    margin: auto ;
+    position: relative;
+    top: -40px;
+    margin-bottom: -35px;
   }
-  
+  a.but:hover{
+    background-color: #D4AF37;
+    color: black;
+  }
 
 }
 
 article {
-  background-color: antiquewhite;
+  background-color: #333333;
   padding: 20px 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -219,12 +246,15 @@ article {
     line-height: 1.5;
     padding: 20px;
   }
+  div h3{
+    color: #D4AF37;
+  }
 
 }
 
 
 footer {
-  background-color: antiquewhite;
+  background-color: #333333;
   padding: 20px 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -241,4 +271,9 @@ footer {
     border: 1px solid whitesmoke;
    }
   }
+  nav a:hover{
+    background-color: #D4AF37;
+    color: black;
+  }
+
 }
