@@ -170,62 +170,41 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   
-  
-  
-  
-  .div1 a{
-    color: hsl(0, 12%, 93%);
-    text-decoration: none; /* retira decoração do texto */
-    padding: 8px 12px;
-    background-color: gray;
-    border-radius: 10px; /* Deixa os cantos redondos */
-    border: 1px solid whitesmoke;
-  }
-  .div1 img{  
-    display: flex;
-    width: 155px; 
+  div.subprodutos{
+    display: grid;
+    grid-template-columns: repeat(4,20vw) ;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px;
+
   }
   
-
-  .div2 a{
-    color: hsl(0, 12%, 93%);
-    text-decoration: none; /* retira decoração do texto */
-    padding: 8px 12px;
-    background-color: gray;
-    border-radius: 10px; /* Deixa os cantos redondos */
-    border: 1px solid whitesmoke;
-  }
-
-  .div2 img{  
+  img.item{
+    width: auto;
+    height: 15vh;
     display: flex;
-    width: 155px; 
-  }
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    
 
-  .div3 a{
-    color: hsl(0, 12%, 93%);
-    text-decoration: none; /* retira decoração do texto */
-    padding: 8px 12px;
-    background-color: gray;
-    border-radius: 10px; /* Deixa os cantos redondos */
-    border: 1px solid whitesmoke;
   }
-  .div3 img{  
-    display: flex;
-    width: 155px; 
-  }
+  div.botao{
+    display: grid;
+    grid-template-columns: repeat(4,20vw) ;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px;
 
-  .div4 a{
-    color: hsl(0, 12%, 93%);
-    text-decoration: none; /* retira decoração do texto */
-    padding: 8px 12px;
-    background-color: gray;
-    border-radius: 10px; /* Deixa os cantos redondos */
-    border: 1px solid whitesmoke;
   }
-  .div4 img{  
+  
+  a.but{
+    
     display: flex;
-    width: 155px; 
+    justify-content: center;
+    margin-top:-30px ;
   }
+  
 
 }
 
