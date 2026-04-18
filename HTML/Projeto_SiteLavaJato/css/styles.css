@@ -158,6 +158,8 @@ main {
   p{
     text-align: center;
     text-decoration:underline;
+    font-size: larger;
+    color: #D4AF37;
   }
   nav{
     display: flex;
@@ -222,11 +224,13 @@ section {
     background-color: rgb(109, 108, 108);
     border-radius: 8px; 
     border: 1px solid whitesmoke;
-    width: 7vw;
+    width: auto;
     margin: auto ;
     position: relative;
     top: -40px;
     margin-bottom: -35px;
+    font-size: auto;
+    size-adjust: auto;
   }
   a.but:hover{
     background-color: #D4AF37;
