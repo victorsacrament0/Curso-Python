@@ -11,6 +11,7 @@ body{
         display:flex;
         justify-content: center;
         border: none;        /* Remove a borda */
+        border-radius: 6px;
         background: orangered;   
         color: bisque;
         font-size: 18px;
