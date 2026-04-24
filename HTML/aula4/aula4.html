@@ -1,0 +1,60 @@
+/* menu hamburgao */
+
+.menu-checkbox { display: none; } /* Esconde o input */
+
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+  margin: 8px;
+}
+
+.line {
+  background: #333;
+  height: 3px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+/* Animação do X */
+#menu-toggle:checked ~ .hamburger-menu .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked ~ .hamburger-menu .line:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .hamburger-menu .line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Esconde/Mostra o menu */
+.menu-nav {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu-nav {
+  display: block;
+}
+
+
+
+
+
+ <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger-menu">
+         <span class="line"></span>
+         <span class="line"></span>
+         <span class="line"></span>
+        </label>
+            <nav class="menu-nav">
+                <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        
