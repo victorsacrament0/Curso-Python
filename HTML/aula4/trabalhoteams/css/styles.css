@@ -12,14 +12,14 @@ body{
         justify-content: center;
         border: none;        /* Remove a borda */
         border-radius: 6px;
-        background: orangered;   
+        background: rgb(49, 52, 241);   
         color: bisque;
         font-size: 18px;
         margin: 12px auto;
         a{color: azure;}
     }
     button:hover{
-        background-color: rgb(49, 52, 241);
+        background-color: orangered;
     }
 
     div{
