@@ -1,8 +1,48 @@
-<!-- Reset Padrão -->
+<!-- Reset Padrão (usar no arquivo css) -->
 
 <!-- *{
     margin: 0;
     border: 0;
     padding: 0; 
 } -->
+
+    <!-- Trabalhar formularios -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <h2>Cadastro Pessoal</h2>
     
+    <!-- O action define para onde os dados serão enviados -->
+    <form action="/enviar-dados" method="POST">
+        
+        <!-- Campo Nome -->
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
+        
+        <!-- Campo Sobrenome -->
+        <label for="sobrenome">Sobrenome:</label><br>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome" required><br><br>
+        
+        <!-- Botão de Envio -->
+        <input type="submit" value="Enviar">
+        
+    </form>
+
+</body>
+</html>
+
+<!-- 
+     <form action="..." method="POST">: Define o início do formulário. O atributo action especifica o arquivo que vai processar os dados, e o method="POST" envia os dados de forma segura.
+     <label for="...">: Cria um rótulo para o campo. O atributo for deve ser igual ao id do input para garantir que, ao clicar no texto "Nome", o foco vá para o campo correto.
+     <input type="text">: Cria o campo onde o usuário digita.
+     id: Único para cada campo, usado pelo label.
+     name: Fundamental. É o nome que o servidor usará para identificar o dado (ex: nome, sobrenome).
+     placeholder: Uma dica exibida dentro do campo antes de o usuário digitar.
+     required: Torna o campo obrigatório.
+     <input type="submit">: Cria o botão que envia o formulário. -->
