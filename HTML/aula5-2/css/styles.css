@@ -16,3 +16,54 @@ header{
     border-style: solid;
 }
 
+main{
+    /* O flexbox utilizo na tag pai */
+    display: flex; /* Permite posixionar os elementos de forma livre */
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Largura responsiva */
+    height: 80vh; /* Altura responsiva */    
+}
+
+.box_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */ /* Permite alinha em linhas (row) ou colunas (colum) */
+    background-color: #193540;
+    width: 50vw;
+    height: 50vh;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box_login input{
+    display: block;
+    width: 40vw;
+    height: 5vh;
+    margin-bottom: 20px;
+    padding: 4px 8px 4px 8px; /* Top, right, bottom, left */
+    box-shadow: 0px 4px 4px #222d31;
+    background-color: #f2f2f2;
+    color: #193540;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;  /* Determina o quanto de negrito/ espessura */
+}
+
+.box_login button{
+    width: 42vw;
+    height: 8vh;
+    box-shadow: 0px 4px 4px #222d31;
+    background-color: #616e74;
+    border: 1px solid #02161e;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.box_login button:hover{
+    background-color: #f2f2f2;
+    color: #616e74;
+    font-size: 18px;
+}
