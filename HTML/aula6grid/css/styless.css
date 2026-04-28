@@ -1,5 +1,15 @@
+* {
+
+ margin: 0;
+
+ border: 0;
+
+ padding: 0;
+
+}
+
 .container {
-    /* Ativa o grid */
+    
     display: grid;
 
     
@@ -13,7 +23,7 @@
 }
 
 
-/* Estilização dos itens */
+
 .item {
     background-color: #4CAF50;
     color: aliceblue;
@@ -30,16 +40,16 @@
         'main main'
         'footer footer'
     ;
-
+    justify-items: center;
     gap: 10px;
 
 }
 
 header {
     grid-area: header;
-    /* Conecta a linha 1 e as colunas da grd */
     background-color: blueviolet;
     width: 100px;
+    text-align: center;
 }
 
 main {
@@ -47,10 +57,12 @@ main {
     grid-area: main;
     background-color: rgb(17, 103, 103);
     width: 200px;
+    text-align: center;
 }
 
 footer  {
     grid-area: footer;
     background-color: blue;
     width: auto;
+    text-align: center;
 }
