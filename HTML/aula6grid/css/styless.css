@@ -1,0 +1,56 @@
+.container {
+    /* Ativa o grid */
+    display: grid;
+
+    
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-rows: 100px 100px 100px;
+    
+    gap: 10px;
+
+    
+}
+
+
+/* Estilização dos itens */
+.item {
+    background-color: #4CAF50;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.container_dois {
+    display: grid;
+
+    grid-template-areas:
+        'header header'
+        'main main'
+        'footer footer'
+    ;
+
+    gap: 10px;
+
+}
+
+header {
+    grid-area: header;
+    /* Conecta a linha 1 e as colunas da grd */
+    background-color: blueviolet;
+    width: 100px;
+}
+
+main {
+
+    grid-area: main;
+    background-color: rgb(17, 103, 103);
+    width: 200px;
+}
+
+footer  {
+    grid-area: footer;
+    background-color: blue;
+    width: auto;
+}
