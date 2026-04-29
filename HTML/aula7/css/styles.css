@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    display: grid ;
+    grid-template-areas: 
+        'header'
+        'banner'
+        'products'
+        'footer'
+    ;
+    grid-template-rows: 80px  400px 1fr 60px; /* definindo a altura das linhas */
+}
+
+.header {
+    grid-area: header;
+    background-color: black;
+    color: beige;
+    display: flex;
+    justify-content: space-between; /* alinha os elementos lado a lado com espaço(final e inicio) */
+    align-items: center; /* centraliza verticalmente na linha */
+    padding: 0 20px;
+
+}
+
+.header .menu{
+    display: flex;
+    gap: 20px;
+        a{
+            text-decoration: none;
+            color: beige
+            
+        }
+ }   
+.banner {
+    grid-area: banner;
+    background: url("https://images.unsplash.com/photo-1600185365483-26d7a4cc7519") center / cover ;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 20px;
+    color: orangered;
+}
