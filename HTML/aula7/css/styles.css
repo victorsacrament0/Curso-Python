@@ -36,10 +36,15 @@ body {
     gap: 20px;
         a{
             text-decoration: none;
-            color: beige
-            
+            color: beige;
+            transition: 0.4s;   /* suaviza a tramsicao do scale */     
         }
  }   
+.header a:hover{
+    color: orangered;
+    transform: scale(1.2);
+        
+}
 .banner {
     grid-area: banner;
     background: url("https://images.unsplash.com/photo-1600185365483-26d7a4cc7519") center / cover ;
@@ -48,4 +53,17 @@ body {
     padding: 30px;
     font-size: 20px;
     color: orangered;
+}
+
+.products {
+    grid-area: product;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    gap: 15px;
+    padding: 20px;
+    
+}
+
+.card{
+
 }
