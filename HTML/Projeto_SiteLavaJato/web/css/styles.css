@@ -1,0 +1,283 @@
+
+
+
+
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: #333333;
+    height: 80px;
+    padding: 20px 15px;
+    
+    #logo {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      width: 300px;
+      height: 80%;
+      margin-top: -15px;
+
+        
+    }
+
+    #login-icon {
+      display: inline-block;
+      justify-content: center;
+      margin: -10;
+      width: 105px;
+      margin-top: -150px;
+      
+    }    
+
+    #loginicon {
+      display: flex;
+      justify-content: right;
+      margin: 0;
+      margin-top: -20px
+    }
+
+
+
+
+
+
+  #menu {
+    z-index: 2;
+  }
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 60px 0 40px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+   transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .nav ul {
+    padding: 0 22px;
+  }
+
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .nav li a:hover {
+    font-weight: bold;
+  }
+
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, gray, gray);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
+}
+
+main {
+    background-color: #333333;
+    padding: 20px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  img{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    size: auto;
+    margin: 18px auto;
+    padding: 20px 20px;
+  }
+
+  p{
+    text-align: center;
+    text-decoration:underline;
+    font-size: larger;
+    color: #D4AF37;
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  nav a{
+    color: hsl(0, 12%, 93%);
+    text-decoration: none; /* retira decoração do texto */
+    padding: 8px 12px;
+    background-color: gray;
+    border-radius: 10px; /* Deixa os cantos redondos */
+    border: 1px solid whitesmoke;
+    
+  }
+  nav a:hover{
+    background-color: #D4AF37;
+    color: black;
+  }
+}
+
+section {
+  background-color: #333333;
+  padding: 20px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  div.subprodutos{
+    display: grid;
+    grid-template-columns: repeat(4,20vw) ;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px;
+
+  }
+  
+  img.item{
+    width: auto;
+    height: 15vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    
+
+  }
+  div.botao{
+    display: grid;
+    grid-template-columns: repeat(4,20vw) ;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px;
+
+  }
+  
+  a.but{
+    
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 12%, 93%);
+    text-decoration: none;
+    padding: 6px;
+    background-color: rgb(109, 108, 108);
+    border-radius: 8px; 
+    border: 1px solid whitesmoke;
+    width: auto;
+    margin: auto ;
+    position: relative;
+    top: -40px;
+    margin-bottom: -35px;
+    font-size: auto;
+    size-adjust: auto;
+  }
+  a.but:hover{
+    background-color: #D4AF37;
+    color: black;
+  }
+
+}
+
+article {
+  background-color: #333333;
+  padding: 20px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  p{
+    background-color: rgb(179, 177, 177);
+    text-align:justify;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  div h3{
+    color: #D4AF37;
+  }
+
+}
+
+
+footer {
+  background-color: #333333;
+  padding: 20px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  nav{ 
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+   a{
+    color: hsl(0, 12%, 93%);
+    text-decoration: none; /* retira decoração do texto */
+    padding: 8px 12px;
+    background-color: gray;
+    border-radius: 10px; /* Deixa os cantos redondos */
+    border: 1px solid whitesmoke;
+   }
+  }
+  nav a:hover{
+    background-color: #D4AF37;
+    color: black;
+  }
+
+}
