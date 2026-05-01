@@ -151,6 +151,7 @@ main {
   .imagem img {
     width: 90vw ;
     padding-top: 20px;
+    margin-left: 9px;
   }
 
   p {
