@@ -180,24 +180,88 @@ main {
 
 section {
   grid-area: section;
+  width: 97%;
+  background-color: #333333;
+
+  div.subprodutos{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,20vw) ;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom:15px ;
+    margin-top: 12px;
+    
+
+  }
+  
+  img.item{
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    display: flex;
+    
+    
+    
+
+  }
+  div.botao{
+    display: grid;
+    grid-template-columns: repeat(4,20vw) ;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px;
+    gap: 10px;
+    
+
+  }
+  
+  a.but{
+    
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 12%, 93%);
+    text-decoration: none;
+    padding: 2px;
+    padding-bottom: 12px;
+    background-color: rgb(109, 108, 108);
+    border-radius: 8px; 
+    border: 1px solid whitesmoke;
+    width: 70%;
+    margin: auto ;
+    position: relative;
+    top: -35px;
+    margin-bottom: -35px;
+    font-size: 10px ;
+    text-align: center;    
+    height: 15px;
+    
+    
+  }
+  
+
 }
 
 
 article {
   grid-area: article;
   background-color: #333333;
-  padding: 20px 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 6px;
-  margin-right: 6px;
+  width: 97%;
+  
   p{
+    display: flex;
+    width: 80%;
     background-color: #D4AF37;
     text-align:justify;
     line-height: 1.5;
     padding: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
   }
   div h3{
+    margin-left: 15px;
+    margin-top: 7px;
     color: #D4AF37;
     margin-bottom: 10px;
   }
@@ -206,8 +270,9 @@ article {
 footer {
   grid-area: footer;
   background-color: #333333;
-  padding: 20px 15px;
-  width: 89%;
+  width: 97%;
+  height: 8vh;
+  padding-top: 15px;
   margin-bottom: 7px;
   
 
