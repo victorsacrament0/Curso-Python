@@ -17,9 +17,9 @@ body {
     .container-filho {
         img {
             display: block;
-            width: 100vw;       /* Largura total da viewport */
-            height: 100vh;      /* Altura total da viewport */
-            object-fit: cover;  /* Cobre a tela sem distorcer */
+            width: 100vw;       
+            height: 100vh;      
+            object-fit: cover;  
             
             top: 0;
             left: 0;
