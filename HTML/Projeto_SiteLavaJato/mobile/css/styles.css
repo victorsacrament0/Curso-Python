@@ -136,3 +136,21 @@ header {
   }
 
 }
+
+main {
+  grid-area: main;
+  background-color: #333333 ;
+  width: 97%;
+  .imagem {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagem img {
+    width: 90vw ;
+    padding-top: 20px;
+  }
+
+  
+
+}
