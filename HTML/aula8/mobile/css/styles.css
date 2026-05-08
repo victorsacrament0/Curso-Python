@@ -288,7 +288,7 @@ footer {
   padding-top: 6px;
   margin-bottom: 7px;
   margin-top: -9px;
-  
+  align-items: center;
 
   nav{ 
     display: flex;
