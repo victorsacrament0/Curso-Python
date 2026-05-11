@@ -27,7 +27,7 @@ try:
             qtd = int(input('Digite a quantidade desejada: '))
             total += valor_gta * qtd
             gta += qtd
-        elif pedido in ['fifa' , 'futebol']:
+        elif pedido in ['fifa' , 'futebol', 'fc']:
             qtd = int(input('Digite a quantidade desejada: '))
             total += valor_fifa * qtd
             fifa += qtd
