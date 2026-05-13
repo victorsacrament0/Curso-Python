@@ -37,5 +37,27 @@ def saudacao(id):
  
 saudacao(id)
 
+"""  """
 
+age = input('Digite a idade:')
+city = input('Digite uma cidade:')
+prod = input('Digite um produto:')
 
+def idade(age):
+    
+    print(f'Idade:{age}')
+    print(30*'_')
+
+def cidade(city):
+    
+    print(f'Cidade:{city}')
+    print(30*'_') 
+
+def product(prod):
+    
+    print(f'Produto:{prod}')
+    print(30*'_') 
+
+idade(age)
+cidade(city)
+product(prod)
