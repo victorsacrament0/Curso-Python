@@ -22,7 +22,7 @@ def saudacao():
 def menu():
     print('Menu:','\n','Macarronada e Feijoada')
 def line():
-    print('_'*30)
+    print('_'*30,'\n')
 
 saudacao()
 menu()
