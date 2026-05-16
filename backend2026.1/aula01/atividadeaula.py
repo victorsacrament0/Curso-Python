@@ -60,19 +60,19 @@ print('Obrigado por nos escolher, volte sempre!')
 print('_' * 30 + '\n' )
 
 
-""" Estudo de Caso: Loja de Games 
+""" Segunda Maneira
  
-#Declarar as listas
+
 jogos = ["Minecraft", "GTA V", "FIFA", "PAC MAN"]
 precos = [80, 120, 90, 50]
  
 total = 0
  
-#Exibe menu para escolha
+
 for i in range(len(jogos)):
     print(i, "-", jogos[i],"- R$", precos[i] )
  
-#Usuario seleciona
+
 for i in jogos:
     escolha = int(input("Escolha o jogo: [0] [1] [2] [3]: "))
     total += precos[escolha]
