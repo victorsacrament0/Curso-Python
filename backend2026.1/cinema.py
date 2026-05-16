@@ -18,7 +18,7 @@ def mostrar_filmes():
 
 def registrar_venda():
     
-    Filme = input("Digite o nome do filme: ")
+    filme = input("Digite o nome do filme: ")
     try:
         quantidade = int(input("Quantidade de ingressos: "))
         preco = float(input("Preço unitário do ingresso (R$): "))
