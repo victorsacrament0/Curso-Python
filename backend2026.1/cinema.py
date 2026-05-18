@@ -33,10 +33,11 @@ def registrar_venda():
             print("\nQuantidade e preço devem ser valores positivos.")
     except ValueError:
         print("\nEntrada inválida. Digite apenas números.")
-        print('_'*35,'\n')
+        
 
     
-    print(f'O filme escolhido foi {filme}, \nPreço unitário: R${preco:.2f}, \nQaunditade: {quantidade}')
+    print(f'O filme escolhido foi {filme}, \nPreço unitário: R${preco:.2f}, \nQuantidade: {quantidade}')
+    print('_'*35,'\n')
 
 def calcular_total_arrecadado():
     total = sum(valores_arrecadados)
