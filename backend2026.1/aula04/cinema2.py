@@ -18,9 +18,9 @@ def cadastro_filme():
 
     #Dicionario (Objeto)
     filme = {
-        'nome': nome_filme,
-        'genero': genero_filme,
-        'autor': autor_filme
+        'Nome': nome_filme,
+        'Genero': genero_filme,
+        'Autor': autor_filme
     }
 
     filmes_cartaz.append(nome_filme) #Cadastra o filme na lista Filmes
