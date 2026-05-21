@@ -1,6 +1,6 @@
 class Calculadora:
     def __init__(self):
-        print('|:.Calculadora Tres Esquilos.:|\n')
+        print('|:.Calculadora Três Esquilos.:|\n')
 
     def somar (self,nu1,nu2):
         print (f"\n|:Resultado: {nu1} + {nu2} = [{nu1 + nu2}]  :|\n")
