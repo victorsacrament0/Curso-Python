@@ -21,7 +21,7 @@ operacao.info_dep()
 
 class ContaBancaria:
     def __init__(self):
-        self.saldo = 0
+        self.__saldo = 0
    
     def saldo_atual(self):
         print(f"Saldo atual: R${self.saldo:.2f}")
