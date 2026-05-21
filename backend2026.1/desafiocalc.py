@@ -3,16 +3,16 @@ class Calculadora:
         print('|:.Calculadora Três Esquilos.:|\n')
 
     def somar (self,nu1,nu2):
-        print (f"\n|:Resultado: {nu1} + {nu2} = [{nu1 + nu2}]  :|\n")
+        print (f"\n|:Resultado: {nu1} + {nu2} =  [{nu1 + nu2}]  :|\n")
     
     def subtrair (self,nu1,nu2):
-        print(f"\n|:Resultado: {nu1} - {nu2} = [{nu1 - nu2}]  :|\n")
+        print(f"\n|:Resultado: {nu1} - {nu2} =  [{nu1 - nu2}]  :|\n")
     
     def dividir (self,nu1,nu2):
-        print(f"\n|:Resultado: {nu1} ÷ {nu2} = [{nu1 / nu2}]  :|\n")
+        print(f"\n|:Resultado: {nu1} ÷ {nu2} =  [{nu1 / nu2}]  :|\n")
 
     def multiplicar (self,nu1,nu2):
-        print(f"\n|:Resultado: {nu1} x {nu2} = [{nu1 * nu2}]  :|\n")
+        print(f"\n|:Resultado: {nu1} x {nu2} =  [{nu1 * nu2}]  :|\n")
         
 
     def main(self):
