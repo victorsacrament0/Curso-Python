@@ -41,9 +41,9 @@ class Calculadora:
                     print(f"\n| VALOR INVALIDO |\n    | SAINDO |\n")
                     break
             except ValueError:
-                print(50*("-"))
+                print(46*("-"))
                 print("Operação inválida! Por favor, tente novamente.")
-                print(50*("-"))
+                print(46*("-"))
 
 numb = Calculadora()
 numb.main()
