@@ -19,7 +19,7 @@ class Calculadora:
          
         while True:
             try:
-                opcao = int(input("Escolha um opção:(Para sair, digitar qualquer outro valor)\n[1 - Somar]\n[2 - Subtrair]\n[3 - Dividir]\n[4 - Multiplicar]\n ->"))
+                opcao = int(input("Escolha um opção:(Para sair, digitar qualquer outro número)\n[1 - Somar]\n[2 - Subtrair]\n[3 - Dividir]\n[4 - Multiplicar]\n ->"))
                 
                 if opcao == 1:
                     number1 = float(input('Digite o primeiro número: '))
@@ -41,9 +41,9 @@ class Calculadora:
                     print(f"\n| VALOR INVALIDO |\n    | SAINDO |\n")
                     break
             except ValueError:
-                print(40*("-"))
+                print(50*("-"))
                 print("Operação inválida! Por favor, tente novamente.")
-                print(40*("-"))
+                print(50*("-"))
 
 numb = Calculadora()
 numb.main()
