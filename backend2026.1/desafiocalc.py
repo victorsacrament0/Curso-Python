@@ -40,5 +40,5 @@ class Calculadora:
                 print(f"\n| VALOR INVALIDO |\n    | SAINDO |\n")
                 break
 
-numero = Calculadora()
-numero.main()
+numb = Calculadora()
+numb.main()
