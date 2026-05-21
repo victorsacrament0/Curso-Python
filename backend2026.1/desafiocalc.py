@@ -44,5 +44,6 @@ class Calculadora:
                 print(40*("-"))
                 print("Operação inválida! Por favor, tente novamente.")
                 print(40*("-"))
+
 numb = Calculadora()
 numb.main()
