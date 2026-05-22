@@ -5,7 +5,7 @@ class Animal:
         self.tipo = tipo_animal
 
     def mostrar_dados(self):
-        print(f'O animal {self.nome},\na idade é {self.idade},\nTipo: {self.tipo}')
+        print(f'|Nome: {self.nome}\n|Idade: {self.idade}\n|Tipo: {self.tipo}')
 
  
  
@@ -17,7 +17,9 @@ class Petshop:
     def cadastar_animal(self,nome,idade,tipo):
         meu_animal = Animal(nome,idade,tipo)
         self.animais.append(meu_animal)
-        print('Animal Cadastrado!')
+        print('_'*25)
+        print(' - Animal Cadastrado! -')
+        print('_'*25,'\n')
 
     def mostrar_animais(self):
         print('_'*45)
@@ -31,7 +33,7 @@ class Petshop:
          
         while True:
             try:
-                opcao = int(input("Escolha um opção:\n[1 - cadastrar]\n[2 - Mostrar]\n[3 - Sair]\n ->"))
+                opcao = int(input("Escolha um opção:\n[1 - Cadastrar]\n[2 - Mostrar]\n[3 - Sair]\n ->"))
                 
                 if opcao == 1:
                     nameani = input('Digite o nome: ')
