@@ -9,10 +9,7 @@ class Calculadora:
         print(f"\n|:Resultado: {nu1} - {nu2} =  [{nu1 - nu2}]  :|\n")
     
     def dividir (self,nu1,nu2):
-        if nu2 == 0:
-            print('\nImpossivel divisão por 0\n')
-        else:
-            print(f"\n|:Resultado: {nu1} ÷ {nu2} =  [{nu1 / nu2}]  :|\n")
+        print(f"\n|:Resultado: {nu1} ÷ {nu2} =  [{nu1 / nu2}]  :|\n")
 
     def multiplicar (self,nu1,nu2):
         print(f"\n|:Resultado: {nu1} x {nu2} =  [{nu1 * nu2}]  :|\n")
@@ -33,7 +30,6 @@ class Calculadora:
                     number2 = float(input('Digite o segundo número: '))
                     self.subtrair(number1,number2)
                 elif opcao == 3:
-                    
                     number1 = float(input('Digite o primeiro número: '))
                     number2 = float(input('Digite o segundo número: '))
                     self.dividir(number1,number2)
