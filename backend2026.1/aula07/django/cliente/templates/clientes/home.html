@@ -21,6 +21,15 @@
             <li>{{nome}}</li>
             {% endfor %}
         </ol>
+        <hr>
+        <ol>
+            {%  for carros in meus_carros  %}
+                <li>Marca: {{ carros.marca }}</li>
+                <li>Modelo: {{ carros.modelo }}</li>
+                <li>Ano: {{ carros.ano }}</li>
+                <hr>
+            {% endfor  %}
+        </ol>
     </main>
 </body>
 </html>

@@ -18,4 +18,9 @@ def clientdb (request):
         'nascimento' : '15/02/1982',
     }
     nome_clientes = ['Maria','Jose','Pedro','Ana']
-    return render(request, 'clientes/home.html', {'mensagem':titulo, 'clientesdb':lista_clientes, 'dados':nome_clientes})
+    carros = [
+        {'marca': "Chevrolet", 'modelo':'Onix LT', 'ano': '2020'},
+        {'marca': "Fiat", 'modelo':'Uno', 'ano': '2010'},
+        {'marca': "VW", 'modelo':'Gol', 'ano': '2022'},
+    ]
+    return render(request, 'clientes/home.html', {'mensagem':titulo, 'clientesdb':lista_clientes, 'dados':nome_clientes, 'meus_carros':carros})
