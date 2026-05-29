@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados Clientes</title>
+    <title>Dados Alunos</title>
 </head>
 <body>
     <main>
@@ -16,6 +16,7 @@
                 <th> Nome: </th>
                 <th> Curso: </th>
                 <th> Turma: </th>
+                <th> Ações </th>
             </thead>
         
         
@@ -23,9 +24,9 @@
             <tbody>
                 {%  for id in clientesdb  %} 
                 <tr>
-                    <td> {{ id.nome }} </td>
-                    <td> {{ id.curso }} </td>
-                    <td> {{ id.turma }} </td>
+                    <td style="padding: 10px;">  {{ id.nome }}  </td>
+                    <td style="padding: 10px;">  {{ id.curso }}  </td>
+                    <td style="padding: 10px;">  {{ id.turma }}  </td>
                     <td><button><b></b>Editar</b></button><button><b></b>Excluir</b></button></td>
                 </tr>
                 {% endfor  %}
