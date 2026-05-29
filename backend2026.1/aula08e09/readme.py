@@ -1,0 +1,1 @@
+""" Usando a pasta aula07, por estar instalado lá o Django """
