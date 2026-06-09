@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-qi^5bb_recc^_#8qpnh+91#w$ton0j60+(5*!rtfgk^a@%b5!z'
+SECRET_KEY = 'django-insecure-=fk-i3gcuy@l9x-pi%(pks!)q^(*3vm==m8#dh6&)d1&qrkmx$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pacientes.apps.PacientesConfig'
+    'cliente.apps.ClienteConfig',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'setup.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,9 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'pt-BR'
+LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC-3'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -115,18 +115,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-import os
-
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'),)
-STATIC_ROOT = os.path.join('static')
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
-
-from django.contrib.messages import constants
-
-MESSAGE_TAGS = {
-    constants.SUCCESS: 'bg-gree-50 text-green-700',
-    constants.ERROR: 'bg-red-50 text-red-700'
-}
+STATIC_URL = 'static/'
