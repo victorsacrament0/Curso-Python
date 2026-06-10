@@ -37,24 +37,15 @@ def paciente_view(request, id):
     if request.method == 'GET':
         tarefas = Tarefas.objects.all()
         consultas = Consultas.objects.filter(paciente=paciente)
-        tuple_grafico = ([str(i.data) for i in consultas], [str(i.humor) for i in consultas]) #forma resumida
-        
-        """consultas_list = []
-         for i in consultas:
-            consultas_list.append(str(i.data))
-        humor_list = []
-        for i in consultas:
-            humor_list.append(i)
+        tuple_grafico = ([str(i.data) for i in consultas], [str(i.humor) for i in consultas])
 
-        tuple_grafico = (consultas_list, humor_list) """
-
-        return render(request,'paciente.html', {'paciente':paciente, 'tarefas': tarefas, 'consultas': consultas, 'tuple_grafico' : tuple_grafico })
+        return render(request,'paciente.html', {'paciente': paciente , 'tarefas': tarefas , 'consultas': consultas , 'tuple_grafico' : tuple_grafico })
     
     elif request.method == 'POST':
         humor = request.POST.get('humor')
         registro_geral = request.POST.get('registro_geral')
         video = request.FILES.get('video')
-        tarefa = request.POST.getlist('tarefas')
+        tarefas = request.POST.getlist('tarefas')
 
         consultas = Consultas(
             humor = int(humor),

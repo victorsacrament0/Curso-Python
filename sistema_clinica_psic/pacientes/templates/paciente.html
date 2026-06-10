@@ -134,10 +134,10 @@
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: {{tuple_grafico.0|safe}},
+        labels: {{ tuple_grafico.0|safe }},
         datasets: [{
           label: 'Humor do paciente',
-          data: {{tuple_grafico.1|safe}},
+          data: {{ tuple_grafico.1|safe }},
           borderWidth: 1
         }]
       },
