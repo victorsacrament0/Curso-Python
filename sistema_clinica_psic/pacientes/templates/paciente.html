@@ -89,7 +89,7 @@
                             <li class="relative flex items-center space-x-4 py-4">
                             <div class="min-w-0 flex-auto">
                                 <div class="flex items-center gap-x-3">
-                                <div class="flex-none rounded-full p-1 {% if consulta.humor >=3 %} bg-green-400/10  text-green-400 {% else %} bg-red-400/10  text-red-400 {% endif %}">
+                                <div class="flex-none rounded-full p-1 {% if consulta.humor >= 3 %} bg-green-400/10  text-green-400 {% else %} bg-red-400/10  text-red-400 {% endif %}">
                                     <div class="size-2 rounded-full bg-current"></div>
                                 </div>
                                 <h2 class="min-w-0 text-sm/6 font-semibold text-slate-800">
@@ -122,10 +122,35 @@
             <div class="mt-4">
                 <canvas id="myChart"></canvas>
               </div>
-               
+            
         </div>
     </div>
     
 </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: {{tuple_grafico.0|safe}},
+        datasets: [{
+          label: 'Humor do paciente',
+          data: {{tuple_grafico.1|safe}},
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+</script>
+
+
 
 {% endblock 'body' %}

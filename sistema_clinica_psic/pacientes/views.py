@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Pacientes, Tarefas, Consultas
+from .models import Pacientes, Tarefas, Consultas, Visualizacoes
 from django.contrib import messages
 from django.contrib.messages import constants
 from django.http import Http404
@@ -35,9 +35,21 @@ def pacientes(request):
 def paciente_view(request, id):
     paciente = Pacientes.objects.get(id=id)
     if request.method == 'GET':
-       tarefas = Tarefas.objects.all()
-       consultas = Consultas.objects.filter(paciente=paciente)
-       return render(request,'paciente.html', {'paciente':paciente, 'tarefas': tarefas, 'consultas': consultas})
+        tarefas = Tarefas.objects.all()
+        consultas = Consultas.objects.filter(paciente=paciente)
+        tuple_grafico = ([str(i.data) for i in consultas], [str(i.humor) for i in consultas]) #forma resumida
+        
+        """consultas_list = []
+         for i in consultas:
+            consultas_list.append(str(i.data))
+        humor_list = []
+        for i in consultas:
+            humor_list.append(i)
+
+        tuple_grafico = (consultas_list, humor_list) """
+
+        return render(request,'paciente.html', {'paciente':paciente, 'tarefas': tarefas, 'consultas': consultas, 'tuple_grafico' : tuple_grafico })
+    
     elif request.method == 'POST':
         humor = request.POST.get('humor')
         registro_geral = request.POST.get('registro_geral')
@@ -80,6 +92,12 @@ def excluir_consulta(request, id):
 
 def consulta_publica(request, id):
     consulta = Consultas.objects.get(id=id)
+    view = Visualizacoes(
+        consulta=consulta,
+        ip=request.META['REMOTE_ADDR']
+    )
+    view.save()
+
     if not consulta.paciente.pagamento_em_dia:   #condição para poder ter acesso ao conteudo
         raise Http404()
     return render(request, 'consulta_publica.html',{'consulta': consulta})
