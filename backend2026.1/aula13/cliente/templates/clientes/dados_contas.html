@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{%  block content %}
+<h1>{{ titulo }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Número: </th>
+                <th>Cliente: </th>
+                <th>Saldo: </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for conta in nossas_contas %}
+            <tr>
+                <td>{{ conta.numero }}</td><br>
+                <td>{{ conta.cliente.nome }}</td><br>
+                <td>{{ conta.saldo }}</td><br>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
