@@ -1,5 +1,5 @@
 from django.shortcuts import render 
-
+from .models import Cliente, Conta
 """ 
 Criar uma pagina onde ele consiga visualizar os clientes cadastrados em formato de tabela
 
@@ -14,12 +14,13 @@ def home(request):
 
 def dados_clientes(request):
     titulo = "Nossos Clientes"
-    nossos_clientes = [
-        {'nome': "Mario Silva de Carvalho", 'idade': '44 anos', 'nascimento': '17/08/1982'},
-        {'nome': "Jose Alves", 'idade': '42 anos', 'nascimento': '17/08/1980'},
-        {"nome": "Ana Maria Braga", "idade": '35 anos', "nascimento": "10/12/1988"}
-    ]
-    return render(request, 'clientes/dados_clientes.html', {'titulo': titulo, 'dados_clientes':nossos_clientes})
+    nossos_clientes = Cliente.objects.all()
+    return render(request, 'clientes/dados_clientes.html', {'titulo': titulo, 'dados_clientes': nossos_clientes})
+
+def conta (request):
+    titulo = "Contas Pessoas Físicas"
+    nossas_contas = Conta.objects.all()
+    return render(request, 'clientes/dados_contas.html', {'titulo': titulo, 'nossas_contas': nossas_contas})
 
 def fomulario(request):
     titulo = "Cadastro Clientes"

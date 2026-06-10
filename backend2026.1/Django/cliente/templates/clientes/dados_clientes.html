@@ -6,16 +6,16 @@
         <thead>
             <tr>
                 <th>Nome: </th>
-                <th>Idade: </th>
-                <th>Nasciemnto: </th>
+                <th>CPF: </th>
+                <th>Telefone: </th>
             </tr>
         </thead>
         <tbody>
             {% for cliente in dados_clientes %}
             <tr>
                 <td>{{ cliente.nome }}</td><br>
-                <td>{{ cliente.idade }}</td><br>
-                <td>{{ cliente.nascimento }}</td><br>
+                <td>{{ cliente.cpf }}</td><br>
+                <td>{{ cliente.telefone }}</td><br>
             </tr>
             {% endfor %}
         </tbody>
